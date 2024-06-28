@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pendaftaran HTML</title>
+  </head>
+  <body>
+    <h1 align="center">Form Pendaftaran Paylater</h1>
+    <form>
+      <fieldset>
+        <!--digunakan untuk membungkus elemen masukan pada form-->
+        <legend>Informasi Pribadi</legend>
+        <!--untuk membuat judul pada fieldset-->
+        <h3>Biodata</h3>
+
+        <label for="Nama">Nama</label><br />
+        <!--Digunakan untuk menambah text pada elemen input form-->
+        <input
+          type="text"
+        /><br /><br /><!--Digunakan untuk memasukan text yang hanya satu baris-->
+        <label for="Pesan">Alamat</label><br />
+        <textarea></textarea><br /><br />
+        <!--Digunakan untuk memasukan text yang berisi beberapa baris-->
+        <label for="Email">Email</label><br />
+        <input type="email" name="required" value="..." /><br /><br />
+        <label for="Password">Password</label><br />
+        <input type="password" /><br /><br />
+        <label for="date">Tanggal Pendaftaran</label><br />
+        <input type="date" /><br /><br />
+        <label for="KTP">KTP</label><br />
+        <input type="file" name="KTP" value="+" /><br /><br />
+      </fieldset>
+
+      <h3>Membuat pilihan Bersifat Tunggal (radio)</h3>
+      <label for="Jenis Kelamin">Jenis Kelamin</label><br />
+      <input type="radio" name="jenis kelamin" value="Pria" />Pria<br />
+      <!--Digunakan untuk menyatakan pilihan yang bersifat tunggal-->
+      <input
+        type="radio"
+        name="jenis kelamin"
+        value="Perempuan"
+      />Perempuan<br />
+      <input type="radio" name="jenis kelamin" value="Boti" />Boti<br /><br />
+
+      <h3>Membuat pilihan lebih dari satu (checkbox)</h3>
+      <label for="hari">Pilih Hari</label><br />
+      <input type="checkbox" name="hari" value="senin" />Senin<br />
+      <!--Digunakan untuk menyatakan pilihan lebih dari satu-->
+      <input type="checkbox" name="hari" value="selasa" />Selasa<br />
+      <input type="checkbox" name="hari" value="selasa" />Rabu<br />
+      <input type="checkbox" name="hari" value="selasa" />Kamis<br />
+      <input type="checkbox" name="hari" value="selasa" />Jumat<br />
+
+      <h3>Dropdown List</h3>
+      <!--Untuk membuat pilihan kebawah-->
+      <label for="Negara">Negara</label><br />
+      <select name="Negara">
+        <option value="Indonesia">Indonesia</option>
+        <option value="Indonesia">Jamaica</option>
+        <option value="Indonesia">Papua Nugini</option>
+        <option value="Indonesia">Aussie</option>
+      </select>
+
+      <h3>Button Submit dan Reset</h3>
+      <input type="submit" name="submit" value="Kirim" />
+      <input type="reset" name="reset" value="Reset" />
+    </form>
+  </body>
+</html>
